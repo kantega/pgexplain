@@ -1,0 +1,33 @@
+version: '3'
+services:
+  postgres:
+    build:
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '5544:5432'
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 3s
+      timeout: 30s
+      retries: 10
+
+
+  pgadmin4:
+    image: dcagatay/pwless-pgadmin4:latest
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - 7777:80
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_HOST: "host.docker.internal"
+      POSTGRES_PORT: "5544"
+      POSTGRES_DB: "postgres"
+    restart: unless-stopped
