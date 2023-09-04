@@ -39,26 +39,26 @@ Database name: postgres
 
 På venstresiden kan man se tilkoblede databaser
 
-<a href="https://ibb.co/kMxqS8J"><img src="https://i.ibb.co/XVbFCsD/SCR-20230323-ebw.png" alt="SCR-20230323-ebw" border="0"></a>
+<img src="https://raw.githubusercontent.com/kantega/pgexplain/main/res/SCR-20230323-ebw.png" alt="SCR-20230323-ebw" border="0" width="600">
 
 Her kan man ekspandere å finne tabellene som ligger i databasen
 
-<a href="https://ibb.co/0jKXVdT"><img src="https://i.ibb.co/FbXWqj2/SCR-20230323-ed1.png" alt="SCR-20230323-ed1" border="0"></a>
+<img src="https://raw.githubusercontent.com/kantega/pgexplain/main/res/SCR-20230323-ed1.png" alt="SCR-20230323-ed1" border="0" height="600  ">
 
 For å utføre spørringer mot databasen åpner man 'Query Tool', som kan nås ved å trykke på følgende knapp
 
-<a href="https://ibb.co/C0h80tY"><img src="https://i.ibb.co/ysWPsRZ/SCR-20230323-ee7.png" alt="SCR-20230323-ee7" border="0"></a>
+<img src="https://raw.githubusercontent.com/kantega/pgexplain/main/res/SCR-20230323-ee7.png" alt="SCR-20230323-ee7" border="0" width="600">
 
 Man kan deretter skrive spørringer, og utføre dem ved å trykke F5. Her er det greit å være klar over at dersom man trykker F5 uten å markere en spørring, vil den kjøre alle spørringene som ligger i vinduet. For å kjøre en individuell spørring bør man derfor markere den før man trykker F5
 
-<a href="https://ibb.co/Hqt777h"><img src="https://i.ibb.co/cQ6JJJY/SCR-20230323-ek5.png" alt="SCR-20230323-ek5" border="0"></a>
+<img src="https://raw.githubusercontent.com/kantega/pgexplain/main/res/SCR-20230323-ek5.png" alt="SCR-20230323-ek5" border="0" width="600">
 
 <br/><br/><br/>
 # Diagram database
 
 Dataene i databasen er relatert i henhold til dette diagrammet. Det kan være greit å sjekke dette for hjelp i enkelte av oppgavene
 
-<a href="https://ibb.co/dMRmrnW"><img src="https://i.ibb.co/W5LV6Sx/db-diagram.png" alt="db-diagram" border="0"></a>
+<img src="https://raw.githubusercontent.com/kantega/pgexplain/main/res/db_diagram.png" alt="db-diagram" border="0" width="600">
 
 <br/><br/><br/>
 
