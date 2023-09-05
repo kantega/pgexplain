@@ -499,8 +499,6 @@ Klarer du å identifisere en svakhet i denne spørringen, og potensielt fikse de
 >         ->  Hash  (cost=30967.00..30967.00 rows=1271833 width=4)
 >               ->  Seq Scan on reservation r  (cost=0.00..30967.00 rows=1271833 width=4)
 >                     Filter: ((state)::text = 'FINISHED'::text)
-> 
-> -- Hint: Limit er en nodetype som bare returnerer de N første radene fra child noden
 > ```
 
 
@@ -514,4 +512,6 @@ Klarer du å identifisere en svakhet i denne spørringen, og potensielt fikse de
 >               ->  Sort  (cost=593.19..618.19 rows=10000 width=56)
 >                     Sort Key: account.first_name
 >                     ->  Seq Scan on account  (cost=0.00..211.00 rows=10000 width=56)
+> 
+> -- Hint: Limit er en nodetype som bare returnerer de N første radene fra child noden
 > ```
